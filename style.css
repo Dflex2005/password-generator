@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    height: 300px;
+    width: 350px;
+    border: 2px solid crimson;
+    border-radius: 10px;
+    background: rgb(10, 10, 10);
+    position: relative;
+}
+
+.container .title{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    font-family: cursive;
+    margin-top: 10px;
+    color: crimson;
+}
+
+.container #pass{
+    background: crimson;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    margin-top: 20px;
+    height: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    outline: none; 
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.copy{
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 75px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    opacity: 0;
+    transition: .8s ease;
+}
+
+.container .output{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 25px;
+    margin-top: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 4px;
+    background: rgb(53, 10, 19);
+    padding: 5px;
+    width: 90%;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+.cover{
+    background: white;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 90%;
+    text-align: center;
+    resize: none;
+    cursor: copy;
+    margin-top: 100px;
+    height: 50px;
+    background: black;
+    opacity: 0;
+}
+
+.gen{
+    position: absolute;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%);
+    margin-top: 160px;
+    font-size: 18px;
+    width: 60%;
+    background: crimson;
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid crimson;
+    transition: .4s ease;
+}
+
+.gen:hover{
+    background: rgb(10, 10, 10);
+}
